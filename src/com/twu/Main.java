@@ -53,7 +53,13 @@ public class Main {
                     System.out.println("请输入需要投票的热搜事件描述");
                     termianlInput = input.next();
                     String superDescription = termianlInput;
-
+                    System.out.println("请输入需要购买的名次");
+                    termianlInput = input.next();
+                    int rank = Integer.valueOf(termianlInput);
+                    System.out.println("请输入购买的金额");
+                    termianlInput = input.next();
+                    int money = Integer.valueOf(termianlInput);
+                    rankingList.buyHotSearch(superDescription, rank ,money);
                     break;
                 case "4":
                     System.out.println("请输入热搜事件描述");
